@@ -1,3 +1,27 @@
+import Tile from "../components/Tile"
+import { CircleStackIcon, ChartBarIcon, UsersIcon } from '@heroicons/react/24/outline'
+
 # Documentation
 
+Supaboard is an open-source dashboard tool for Supabase and Postgres that allows you to easily create dashboards and charts from your data.
+Our mission is to make it easy for anyone to create dashboards and admin panels with minimal effort.
+
 Learn how to get started, explore our guides and check out how to make the most of your Supaboard dashboards.
+
+<div className="md:grid md:grid-cols-3 my-6 gap-6">
+    <Tile>
+        <CircleStackIcon className="h-6 w-6 text-black" />
+        <b className="block my-2">Databases</b>
+        <p>How to connect your database and query it to didplay data on your dashboards.</p>
+    </Tile>
+    <Tile>
+        <ChartBarIcon className="h-6 w-6 text-black" />
+        <b className="block my-2">Dashboards</b>
+        <p>Create dashboards and add charts for various kinds of data.</p>
+    </Tile>
+    <Tile>
+        <UsersIcon className="h-6 w-6 text-black" />
+        <b className="block my-2">Segments</b>
+        <p>Segment your users and (use) use them in your dashboards and more.</p>
+    </Tile>
+</div>

@@ -6,5 +6,5 @@ export default {
       link: 'https://supaboard.co',      
     },
     docsRepositoryBase: 'https://github.com/supaboard/docs',
-    primaryHue: 145,
+    primaryHue: 30,
   }
