@@ -7,4 +7,9 @@ export default {
     },
     docsRepositoryBase: 'https://github.com/supaboard/docs',
     primaryHue: 30,
+    footer: {
+        component: () => (
+            <div></div>
+        )
+    }
   }

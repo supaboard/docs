@@ -1,0 +1,35 @@
+# Creating a segment
+
+Before creating your first segment, you need to create a group of users that acts as your _"All users"_ segment. This is a group of users that contains all users in your application.
+You only need to do this once and it's as simple as clicking the "Tell us where to find your users" button as shown below.
+
+![Create all users segment](/img/docs/add-contacts.png)
+
+In the following wizard, first select a database and in the second step, select the table that contains your users.
+You can select specific columns that we'll show for that segment in the overview or keep all columns active.
+
+<div className="md:grid md:grid-cols-2 my-4 gap-4">
+    <div className="md:col-span-1">
+        <img src="/img/docs/contacts-db.png" alt="Select a database" />
+    </div>
+    <div className="md:col-span-1 mt-4 md:mt-0">
+        <img src="/img/docs/contacts-attributes.png" alt="Select user attributes" />
+    </div>
+</div>
+
+## Adding segments
+
+Once you've created your _"All users"_ segment, you can start creating new segments.
+You can create a new segment by clicking the "Create a new segment" from the segment dropdown in the top bar.
+
+![Create a new segment](/img/docs/new-segment.png)
+
+In the following steps, first choose a name for the new segment and then select the users that should be part of the segment.
+You can either use the simple UI and select a table and filters (WHERE) or use a custom SQL query on the advanced tab.
+
+![Simple segment selection](/img/docs/segment-simple.png)
+
+When using the advanced tab, you can use a custom SQL query to select the users that should be part of the segment. This is ideal for more complex queries that
+require a JOIN or subquery to surface relevant user data. Please make sure the query returns all columns that you want to display for the segment.
+
+![Advanced segment selection](/img/docs/segment-advanced.png)
