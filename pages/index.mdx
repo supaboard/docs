@@ -1,5 +1,6 @@
 import Tile from "../components/Tile"
-import { CircleStackIcon, ChartBarIcon, UsersIcon } from '@heroicons/react/24/outline'
+import Link from "next/link"
+import { CircleStackIcon, ChartBarIcon, UsersIcon } from "@heroicons/react/24/outline"
 
 # Documentation
 
@@ -10,18 +11,30 @@ Learn how to get started, explore our guides and check out how to make the most 
 
 <div className="md:grid md:grid-cols-3 my-6 gap-6">
     <Tile>
-        <CircleStackIcon className="h-6 w-6 text-black" />
-        <b className="block my-2">Databases</b>
-        <p>How to connect your database and query it to didplay data on your dashboards.</p>
+        <Link href="/features/connect-a-database" className="block">
+            <div className="bg-white rounded-full border border-gray-300 flex items-center justify-center h-9 w-9 mt-6">
+                <CircleStackIcon className="h-5 w-5 text-black" />
+            </div>
+            <b className="block my-2">Databases</b>
+            <p>How to connect your database and query it to didplay data on your dashboards.</p>
+        </Link>
     </Tile>
     <Tile>
-        <ChartBarIcon className="h-6 w-6 text-black" />
-        <b className="block my-2">Dashboards</b>
-        <p>Create dashboards and add charts for various kinds of data.</p>
+        <Link href="/features/create-a-dashboard" className="block">
+            <div className="bg-white rounded-full border border-gray-300 flex items-center justify-center h-9 w-9 mt-6">
+                <ChartBarIcon className="h-5 w-5 text-black" />
+            </div>
+            <b className="block my-2">Dashboards</b>
+            <p>Create dashboards and add charts for various kinds of data.</p>
+        </Link>
     </Tile>
     <Tile>
-        <UsersIcon className="h-6 w-6 text-black" />
-        <b className="block my-2">Segments</b>
-        <p>Segment your users and (use) use them in your dashboards and more.</p>
+        <Link href="/features/create-a-segment" className="block">
+            <div className="bg-white rounded-full border border-gray-300 flex items-center justify-center h-9 w-9 mt-6">
+                <UsersIcon className="h-5 w-5 text-black" />
+            </div>
+            <b className="block my-2">Segments</b>
+            <p>Segment your users and (use) use them in your dashboards and more.</p>
+        </Link>
     </Tile>
 </div>

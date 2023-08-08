@@ -1,0 +1,32 @@
+# Connecting a database
+
+Suapaboard allows you to connect different databases and use them for charts on your dashboards. That means each chart can have its own
+data source and you can use different databases for different charts.
+
+Currently, we support the following databases and providers:
+- Postgres
+- Supabase
+- _**Soon**: MySQL_
+
+## Adding a new database
+
+To connect a database, you need to go to https://app.supaboard.co/databases.
+From there, click on the "Add database" button in the top right corner and follow the instructions.
+
+![Add database](/img/docs/add-database.png)
+
+## Configuring a database
+
+Once you have added a database, you're presented with a two step wizard to configure it.
+Firt, choose what kind of database you want to connect to. Currently, we support Postgres and Supabase.
+
+![Choose database](/img/docs/database-type.png)
+
+Next, you need to enter the connection details for your database. Depending on the database type, you may need to enter different information here.
+
+![Configure database](/img/docs/database-details.png)
+
+## Security
+
+Suapaboard always uses the connection details you provide to connect directly to your database. We never extract or save any data from your database.
+Your database credentials are stored encrypted in our database, using the AES-256-CBC algorithm. We decrypt them on the fly and only when we need to connect to your database.
